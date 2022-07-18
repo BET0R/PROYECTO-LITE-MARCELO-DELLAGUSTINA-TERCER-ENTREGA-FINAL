@@ -1,0 +1,39 @@
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@font-face {
+	font-family: 'Azonix';
+	src: url(../font/Azonix.otf);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
+	color: #fff;
+	background-image: url("../img/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Azonix', 'Ubuntu', sans-serif;
+}
+
+.bg_main {
+	background-image: url("../img/background_main.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+p {
+	font-family: 'Varela Round', 'Ubuntu', sans-serif;
+	font-size: 1rem;
+}
+
+.text_yellow {
+	color: map-get($color, yellow);
+}
